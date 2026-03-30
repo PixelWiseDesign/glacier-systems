@@ -1,0 +1,670 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Glacier Systems | Intelligent Automation Solutions</title>
+  <meta name="description" content="Glacier Systems delivers cutting-edge automation solutions that streamline your business operations, reduce costs, and accelerate growth." />
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Rajdhani:wght@500;600;700&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+  <!-- ═══════════════════════════════════════════ NAVIGATION ══ -->
+  <header class="nav-header" id="navbar">
+    <div class="container nav-container">
+      <a href="#home" class="nav-logo">
+        <div class="logo-icon">
+          <svg viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <polygon points="20,2 37,11 37,29 20,38 3,29 3,11" fill="url(#hexGrad)" opacity="0.15"/>
+            <polygon points="20,2 37,11 37,29 20,38 3,29 3,11" fill="none" stroke="url(#strokeGrad)" stroke-width="1.5"/>
+            <text x="20" y="26" text-anchor="middle" fill="url(#textGrad)" font-size="18" font-weight="700" font-family="Rajdhani, sans-serif">G</text>
+            <defs>
+              <linearGradient id="hexGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+                <stop offset="0%" stop-color="#5ac8f5"/>
+                <stop offset="100%" stop-color="#1a9fd4"/>
+              </linearGradient>
+              <linearGradient id="strokeGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+                <stop offset="0%" stop-color="#5ac8f5"/>
+                <stop offset="100%" stop-color="#1a9fd4"/>
+              </linearGradient>
+              <linearGradient id="textGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+                <stop offset="0%" stop-color="#5ac8f5"/>
+                <stop offset="100%" stop-color="#ffffff"/>
+              </linearGradient>
+            </defs>
+          </svg>
+        </div>
+        <span class="logo-text">GLACIER <span>SYSTEMS</span></span>
+      </a>
+
+      <nav class="nav-links" id="navLinks">
+        <a href="#services">Services</a>
+        <a href="#about">About</a>
+        <a href="#solutions">Solutions</a>
+        <a href="#results">Results</a>
+        <a href="#contact">Contact</a>
+      </nav>
+
+      <div class="nav-actions">
+        <a href="#contact" class="btn btn-primary">Get a Free Audit</a>
+        <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- ═══════════════════════════════════════════════ HERO ══ -->
+  <section class="hero" id="home">
+    <div class="hero-bg">
+      <canvas id="particleCanvas"></canvas>
+      <div class="hero-grid"></div>
+    </div>
+    <div class="container hero-content">
+      <div class="hero-badge">
+        <span class="badge-dot"></span>
+        Intelligent Automation Solutions
+      </div>
+      <h1 class="hero-title">
+        Automate Smarter.<br />
+        <span class="gradient-text">Scale Faster.</span>
+      </h1>
+      <p class="hero-subtitle">
+        Glacier Systems designs and deploys enterprise-grade automation that eliminates
+        bottlenecks, reduces operational costs, and lets your team focus on what matters most.
+      </p>
+      <div class="hero-actions">
+        <a href="#contact" class="btn btn-primary btn-lg">Start Automating Today</a>
+        <a href="#services" class="btn btn-ghost btn-lg">
+          <span>Explore Services</span>
+          <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </a>
+      </div>
+      <div class="hero-stats">
+        <div class="hero-stat">
+          <span class="stat-num" data-target="500">0</span><span class="stat-num">+</span>
+          <span class="stat-label">Workflows Automated</span>
+        </div>
+        <div class="hero-stat-divider"></div>
+        <div class="hero-stat">
+          <span class="stat-num" data-target="98">0</span><span class="stat-num">%</span>
+          <span class="stat-label">Client Retention</span>
+        </div>
+        <div class="hero-stat-divider"></div>
+        <div class="hero-stat">
+          <span class="stat-num" data-target="40">0</span><span class="stat-num">%</span>
+          <span class="stat-label">Avg. Cost Reduction</span>
+        </div>
+      </div>
+    </div>
+    <div class="hero-scroll">
+      <span>Scroll to explore</span>
+      <div class="scroll-indicator"></div>
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════ TRUSTED BY BANNER ══ -->
+  <section class="trust-banner">
+    <div class="container">
+      <p class="trust-label">Trusted by forward-thinking companies</p>
+      <div class="trust-logos">
+        <div class="trust-logo">TechVentures</div>
+        <div class="trust-logo">NexaGroup</div>
+        <div class="trust-logo">Orion Logistics</div>
+        <div class="trust-logo">PrimeScale</div>
+        <div class="trust-logo">VaultOps</div>
+        <div class="trust-logo">CoreStream</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ════════════════════════════════════════ SERVICES ══ -->
+  <section class="services" id="services">
+    <div class="container">
+      <div class="section-header">
+        <div class="section-tag">What We Do</div>
+        <h2 class="section-title">End-to-End Automation <span class="gradient-text">Services</span></h2>
+        <p class="section-sub">From intelligent workflow design to AI-powered integrations, we deliver automation that drives real business outcomes.</p>
+      </div>
+
+      <div class="services-grid">
+
+        <div class="service-card" data-aos>
+          <div class="service-icon">
+            <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <rect x="6" y="6" width="16" height="16" rx="3" fill="url(#sg1)" opacity="0.2"/>
+              <rect x="6" y="6" width="16" height="16" rx="3" stroke="url(#sg1)" stroke-width="1.5"/>
+              <rect x="26" y="6" width="16" height="16" rx="3" fill="url(#sg1)" opacity="0.2"/>
+              <rect x="26" y="6" width="16" height="16" rx="3" stroke="url(#sg1)" stroke-width="1.5"/>
+              <rect x="6" y="26" width="16" height="16" rx="3" fill="url(#sg1)" opacity="0.2"/>
+              <rect x="26" y="26" width="16" height="16" rx="3" fill="url(#sg1)" opacity="0.2"/>
+              <rect x="26" y="26" width="16" height="16" rx="3" stroke="url(#sg1)" stroke-width="1.5"/>
+              <path d="M14 26V22M14 22H34M34 22V26" stroke="url(#sg1)" stroke-width="1.5" stroke-linecap="round"/>
+              <defs><linearGradient id="sg1" x1="0%" y1="0%" x2="100%" y2="100%"><stop offset="0%" stop-color="#5ac8f5"/><stop offset="100%" stop-color="#1a9fd4"/></linearGradient></defs>
+            </svg>
+          </div>
+          <h3>Business Process Automation</h3>
+          <p>Streamline repetitive tasks across finance, HR, and operations with intelligent process automation that works around the clock.</p>
+          <ul class="service-features">
+            <li>Invoice & AP/AR Automation</li>
+            <li>Employee Onboarding Workflows</li>
+            <li>Compliance & Reporting</li>
+          </ul>
+          <a href="#contact" class="service-link">Learn more →</a>
+        </div>
+
+        <div class="service-card featured" data-aos>
+          <div class="featured-badge">Most Popular</div>
+          <div class="service-icon">
+            <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <circle cx="24" cy="24" r="10" stroke="url(#sg2)" stroke-width="1.5"/>
+              <circle cx="24" cy="24" r="3" fill="url(#sg2)"/>
+              <path d="M24 6v6M24 36v6M6 24h6M36 24h6" stroke="url(#sg2)" stroke-width="1.5" stroke-linecap="round"/>
+              <path d="M10.5 10.5l4.2 4.2M33.3 33.3l4.2 4.2M37.5 10.5l-4.2 4.2M14.7 33.3l-4.2 4.2" stroke="url(#sg2)" stroke-width="1.5" stroke-linecap="round"/>
+              <defs><linearGradient id="sg2" x1="0%" y1="0%" x2="100%" y2="100%"><stop offset="0%" stop-color="#5ac8f5"/><stop offset="100%" stop-color="#1a9fd4"/></linearGradient></defs>
+            </svg>
+          </div>
+          <h3>AI-Powered Automation</h3>
+          <p>Leverage cutting-edge artificial intelligence to build smart workflows that learn, adapt, and make decisions autonomously.</p>
+          <ul class="service-features">
+            <li>Machine Learning Pipelines</li>
+            <li>NLP Document Processing</li>
+            <li>Predictive Analytics</li>
+          </ul>
+          <a href="#contact" class="service-link">Learn more →</a>
+        </div>
+
+        <div class="service-card" data-aos>
+          <div class="service-icon">
+            <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <rect x="8" y="14" width="32" height="22" rx="3" stroke="url(#sg3)" stroke-width="1.5"/>
+              <path d="M16 14V10a2 2 0 012-2h12a2 2 0 012 2v4" stroke="url(#sg3)" stroke-width="1.5"/>
+              <path d="M8 22h32" stroke="url(#sg3)" stroke-width="1.5"/>
+              <circle cx="20" cy="31" r="2" fill="url(#sg3)" opacity="0.5"/>
+              <circle cx="28" cy="31" r="2" fill="url(#sg3)" opacity="0.5"/>
+              <path d="M20 33v3M28 33v3" stroke="url(#sg3)" stroke-width="1.5" stroke-linecap="round"/>
+              <defs><linearGradient id="sg3" x1="0%" y1="0%" x2="100%" y2="100%"><stop offset="0%" stop-color="#5ac8f5"/><stop offset="100%" stop-color="#1a9fd4"/></linearGradient></defs>
+            </svg>
+          </div>
+          <h3>Robotic Process Automation</h3>
+          <p>Deploy software robots that mimic human actions across any application — no API required. Legacy or modern systems.</p>
+          <ul class="service-features">
+            <li>UI & Web Automation</li>
+            <li>Data Extraction & Migration</li>
+            <li>Cross-System Integration</li>
+          </ul>
+          <a href="#contact" class="service-link">Learn more →</a>
+        </div>
+
+        <div class="service-card" data-aos>
+          <div class="service-icon">
+            <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M12 38V24l12-14 12 14v14H28V28h-8v10H12z" stroke="url(#sg4)" stroke-width="1.5" stroke-linejoin="round"/>
+              <circle cx="36" cy="14" r="6" fill="url(#sg4)" opacity="0.15"/>
+              <circle cx="36" cy="14" r="6" stroke="url(#sg4)" stroke-width="1.5"/>
+              <path d="M34 14l1.5 1.5L38 12" stroke="url(#sg4)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+              <defs><linearGradient id="sg4" x1="0%" y1="0%" x2="100%" y2="100%"><stop offset="0%" stop-color="#5ac8f5"/><stop offset="100%" stop-color="#1a9fd4"/></linearGradient></defs>
+            </svg>
+          </div>
+          <h3>Systems Integration</h3>
+          <p>Connect your entire tech stack seamlessly. We build robust integrations between CRMs, ERPs, databases, and cloud platforms.</p>
+          <ul class="service-features">
+            <li>API Development & Management</li>
+            <li>Salesforce, SAP, HubSpot</li>
+            <li>Real-Time Data Sync</li>
+          </ul>
+          <a href="#contact" class="service-link">Learn more →</a>
+        </div>
+
+        <div class="service-card" data-aos>
+          <div class="service-icon">
+            <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M10 34L24 10l14 24H10z" stroke="url(#sg5)" stroke-width="1.5" stroke-linejoin="round"/>
+              <path d="M24 22v6M24 31v2" stroke="url(#sg5)" stroke-width="2" stroke-linecap="round"/>
+              <path d="M6 40h36" stroke="url(#sg5)" stroke-width="1.5" stroke-linecap="round" opacity="0.4"/>
+              <defs><linearGradient id="sg5" x1="0%" y1="0%" x2="100%" y2="100%"><stop offset="0%" stop-color="#5ac8f5"/><stop offset="100%" stop-color="#1a9fd4"/></linearGradient></defs>
+            </svg>
+          </div>
+          <h3>Automation Consulting</h3>
+          <p>Not sure where to start? Our experts conduct deep-dive audits of your operations and build a tailored automation roadmap.</p>
+          <ul class="service-features">
+            <li>Process Discovery & Mapping</li>
+            <li>ROI Analysis</li>
+            <li>Technology Selection</li>
+          </ul>
+          <a href="#contact" class="service-link">Learn more →</a>
+        </div>
+
+        <div class="service-card" data-aos>
+          <div class="service-icon">
+            <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <rect x="6" y="20" width="8" height="22" rx="2" stroke="url(#sg6)" stroke-width="1.5"/>
+              <rect x="20" y="12" width="8" height="30" rx="2" stroke="url(#sg6)" stroke-width="1.5"/>
+              <rect x="34" y="6" width="8" height="36" rx="2" stroke="url(#sg6)" stroke-width="1.5"/>
+              <path d="M8 18l12-8 14 6" stroke="url(#sg6)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+              <defs><linearGradient id="sg6" x1="0%" y1="0%" x2="100%" y2="100%"><stop offset="0%" stop-color="#5ac8f5"/><stop offset="100%" stop-color="#1a9fd4"/></linearGradient></defs>
+            </svg>
+          </div>
+          <h3>Analytics & Monitoring</h3>
+          <p>Gain full visibility into your automated workflows with real-time dashboards, alerts, and performance analytics.</p>
+          <ul class="service-features">
+            <li>Real-Time Dashboards</li>
+            <li>KPI Tracking</li>
+            <li>Anomaly Detection</li>
+          </ul>
+          <a href="#contact" class="service-link">Learn more →</a>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ════════════════════════════════════════ ABOUT ══ -->
+  <section class="about" id="about">
+    <div class="container about-container">
+      <div class="about-visual">
+        <div class="about-graphic">
+          <div class="orbit orbit-1">
+            <div class="orbit-dot"></div>
+          </div>
+          <div class="orbit orbit-2">
+            <div class="orbit-dot"></div>
+          </div>
+          <div class="orbit orbit-3">
+            <div class="orbit-dot"></div>
+          </div>
+          <div class="about-core">
+            <svg viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg" width="60">
+              <polygon points="40,4 74,22 74,58 40,76 6,58 6,22" fill="url(#coreGrad)" opacity="0.2"/>
+              <polygon points="40,4 74,22 74,58 40,76 6,58 6,22" stroke="url(#coreGrad)" stroke-width="2"/>
+              <text x="40" y="52" text-anchor="middle" fill="url(#coreGrad)" font-size="36" font-weight="700" font-family="Rajdhani, sans-serif">G</text>
+              <defs>
+                <linearGradient id="coreGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+                  <stop offset="0%" stop-color="#5ac8f5"/>
+                  <stop offset="100%" stop-color="#1a9fd4"/>
+                </linearGradient>
+              </defs>
+            </svg>
+          </div>
+          <div class="orbit-label ol-1">Process</div>
+          <div class="orbit-label ol-2">Integrate</div>
+          <div class="orbit-label ol-3">Optimize</div>
+        </div>
+      </div>
+
+      <div class="about-content">
+        <div class="section-tag">Our Story</div>
+        <h2 class="section-title">Built to Automate <span class="gradient-text">Everything</span></h2>
+        <p class="about-text">
+          Glacier Systems was founded on a single belief: that manual, repetitive work is the biggest bottleneck to business growth. We've spent years perfecting the craft of intelligent automation — combining deep technical expertise with strategic business thinking.
+        </p>
+        <p class="about-text">
+          Our team of engineers, AI specialists, and automation architects has helped companies across industries reclaim thousands of hours and reinvest them in the work that truly moves the needle.
+        </p>
+        <div class="about-pillars">
+          <div class="pillar">
+            <div class="pillar-icon">⚡</div>
+            <div>
+              <strong>Speed</strong>
+              <p>Rapid deployment with minimal disruption to existing operations.</p>
+            </div>
+          </div>
+          <div class="pillar">
+            <div class="pillar-icon">🔒</div>
+            <div>
+              <strong>Security</strong>
+              <p>Enterprise-grade security baked into every solution we build.</p>
+            </div>
+          </div>
+          <div class="pillar">
+            <div class="pillar-icon">📈</div>
+            <div>
+              <strong>Scalability</strong>
+              <p>Solutions that grow with your business — from startup to enterprise.</p>
+            </div>
+          </div>
+        </div>
+        <a href="#contact" class="btn btn-primary">Work With Us</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ════════════════════════════════════ SOLUTIONS ══ -->
+  <section class="solutions" id="solutions">
+    <div class="container">
+      <div class="section-header">
+        <div class="section-tag">By Industry</div>
+        <h2 class="section-title">Automation for <span class="gradient-text">Your Industry</span></h2>
+        <p class="section-sub">We've delivered transformative automation across a wide range of sectors.</p>
+      </div>
+      <div class="industries-grid">
+        <div class="industry-card" data-aos>
+          <div class="industry-num">01</div>
+          <h3>Finance & Banking</h3>
+          <p>Automate compliance reporting, fraud detection pipelines, and loan processing workflows.</p>
+        </div>
+        <div class="industry-card" data-aos>
+          <div class="industry-num">02</div>
+          <h3>Healthcare</h3>
+          <p>Streamline patient intake, claims processing, and regulatory compliance with precision automation.</p>
+        </div>
+        <div class="industry-card" data-aos>
+          <div class="industry-num">03</div>
+          <h3>Logistics & Supply Chain</h3>
+          <p>Optimize inventory management, shipping workflows, and supplier communications end-to-end.</p>
+        </div>
+        <div class="industry-card" data-aos>
+          <div class="industry-num">04</div>
+          <h3>E-Commerce & Retail</h3>
+          <p>Automate order fulfillment, customer support ticketing, and personalized marketing campaigns.</p>
+        </div>
+        <div class="industry-card" data-aos>
+          <div class="industry-num">05</div>
+          <h3>Manufacturing</h3>
+          <p>Connect shop floor systems with ERP and automate quality control and procurement processes.</p>
+        </div>
+        <div class="industry-card" data-aos>
+          <div class="industry-num">06</div>
+          <h3>Professional Services</h3>
+          <p>Automate client onboarding, billing, project tracking, and document generation workflows.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ════════════════════════════════════════ RESULTS ══ -->
+  <section class="results" id="results">
+    <div class="results-bg"></div>
+    <div class="container">
+      <div class="section-header light">
+        <div class="section-tag tag-light">Proven Results</div>
+        <h2 class="section-title">Numbers That Speak <span class="gradient-text-light">for Themselves</span></h2>
+        <p class="section-sub light">Every engagement is measured against tangible business outcomes.</p>
+      </div>
+
+      <div class="metrics-grid">
+        <div class="metric-card" data-aos>
+          <div class="metric-value counter" data-target="500">0</div>
+          <div class="metric-suffix">+</div>
+          <div class="metric-label">Workflows Automated</div>
+          <div class="metric-desc">Across all client engagements</div>
+        </div>
+        <div class="metric-card" data-aos>
+          <div class="metric-value counter" data-target="40">0</div>
+          <div class="metric-suffix">%</div>
+          <div class="metric-label">Average Cost Reduction</div>
+          <div class="metric-desc">In operational expenses</div>
+        </div>
+        <div class="metric-card" data-aos>
+          <div class="metric-value counter" data-target="10">0</div>
+          <div class="metric-suffix">x</div>
+          <div class="metric-label">Faster Processing</div>
+          <div class="metric-desc">Compared to manual operations</div>
+        </div>
+        <div class="metric-card" data-aos>
+          <div class="metric-value counter" data-target="98">0</div>
+          <div class="metric-suffix">%</div>
+          <div class="metric-label">Client Retention Rate</div>
+          <div class="metric-desc">Year-over-year satisfaction</div>
+        </div>
+      </div>
+
+      <div class="testimonials">
+        <div class="testimonial active" id="t1">
+          <blockquote>
+            "Glacier Systems transformed our accounts payable process. What used to take 3 days now runs overnight without a single human touch. The ROI was undeniable within the first month."
+          </blockquote>
+          <div class="testimonial-author">
+            <div class="author-avatar">JM</div>
+            <div>
+              <strong>James Morrison</strong>
+              <span>CFO, Orion Logistics</span>
+            </div>
+          </div>
+        </div>
+        <div class="testimonial" id="t2">
+          <blockquote>
+            "Their AI-powered document processing solution reduced our claims handling time by 70%. The team was incredibly professional and delivered ahead of schedule."
+          </blockquote>
+          <div class="testimonial-author">
+            <div class="author-avatar">SR</div>
+            <div>
+              <strong>Sarah Reynolds</strong>
+              <span>VP Operations, HealthBridge</span>
+            </div>
+          </div>
+        </div>
+        <div class="testimonial" id="t3">
+          <blockquote>
+            "We integrated 12 disparate systems into one seamless automated flow. Glacier Systems made the complex feel effortless and the results have been extraordinary."
+          </blockquote>
+          <div class="testimonial-author">
+            <div class="author-avatar">DK</div>
+            <div>
+              <strong>David Kim</strong>
+              <span>CTO, NexaGroup</span>
+            </div>
+          </div>
+        </div>
+        <div class="testimonial-controls">
+          <button class="t-btn active" data-target="t1"></button>
+          <button class="t-btn" data-target="t2"></button>
+          <button class="t-btn" data-target="t3"></button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ════════════════════════════════════════ PROCESS ══ -->
+  <section class="process">
+    <div class="container">
+      <div class="section-header">
+        <div class="section-tag">How It Works</div>
+        <h2 class="section-title">Our <span class="gradient-text">Proven Process</span></h2>
+        <p class="section-sub">A structured, transparent approach from discovery to deployment.</p>
+      </div>
+      <div class="process-steps">
+        <div class="process-step" data-aos>
+          <div class="step-number">01</div>
+          <div class="step-content">
+            <h3>Discovery & Audit</h3>
+            <p>We map your current workflows, identify automation opportunities, and calculate potential ROI before writing a single line of code.</p>
+          </div>
+        </div>
+        <div class="process-connector"></div>
+        <div class="process-step" data-aos>
+          <div class="step-number">02</div>
+          <div class="step-content">
+            <h3>Strategy & Design</h3>
+            <p>Our architects design a custom automation blueprint tailored to your tech stack, team structure, and business goals.</p>
+          </div>
+        </div>
+        <div class="process-connector"></div>
+        <div class="process-step" data-aos>
+          <div class="step-number">03</div>
+          <div class="step-content">
+            <h3>Build & Integrate</h3>
+            <p>We build, test, and integrate your automation solutions with rigorous QA ensuring reliability before any go-live.</p>
+          </div>
+        </div>
+        <div class="process-connector"></div>
+        <div class="process-step" data-aos>
+          <div class="step-number">04</div>
+          <div class="step-content">
+            <h3>Deploy & Optimize</h3>
+            <p>Launch with full monitoring in place. We continuously optimize performance and scale with your growing needs.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ════════════════════════════════════════ CONTACT ══ -->
+  <section class="contact" id="contact">
+    <div class="container contact-container">
+      <div class="contact-info">
+        <div class="section-tag">Get In Touch</div>
+        <h2 class="section-title">Ready to <span class="gradient-text">Automate?</span></h2>
+        <p>Start with a free automation audit. Our team will analyze your current processes and show you exactly where automation can deliver measurable results.</p>
+
+        <div class="contact-items">
+          <div class="contact-item">
+            <div class="contact-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round">
+                <path d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/>
+              </svg>
+            </div>
+            <div>
+              <strong>Email Us</strong>
+              <span>hello@glaciersystems.io</span>
+            </div>
+          </div>
+          <div class="contact-item">
+            <div class="contact-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round">
+                <path d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"/>
+              </svg>
+            </div>
+            <div>
+              <strong>Call Us</strong>
+              <span>+1 (800) 555-GLAC</span>
+            </div>
+          </div>
+          <div class="contact-item">
+            <div class="contact-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round">
+                <path d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/><path d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/>
+              </svg>
+            </div>
+            <div>
+              <strong>Headquarters</strong>
+              <span>San Francisco, CA 94105</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <form class="contact-form" id="contactForm" novalidate>
+        <div class="form-row">
+          <div class="form-group">
+            <label for="firstName">First Name</label>
+            <input type="text" id="firstName" name="firstName" placeholder="John" required />
+          </div>
+          <div class="form-group">
+            <label for="lastName">Last Name</label>
+            <input type="text" id="lastName" name="lastName" placeholder="Smith" required />
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="email">Work Email</label>
+          <input type="email" id="email" name="email" placeholder="john@company.com" required />
+        </div>
+        <div class="form-group">
+          <label for="company">Company</label>
+          <input type="text" id="company" name="company" placeholder="Acme Corp" />
+        </div>
+        <div class="form-group">
+          <label for="service">Service Interest</label>
+          <select id="service" name="service">
+            <option value="">Select a service...</option>
+            <option value="bpa">Business Process Automation</option>
+            <option value="ai">AI-Powered Automation</option>
+            <option value="rpa">Robotic Process Automation</option>
+            <option value="integration">Systems Integration</option>
+            <option value="consulting">Automation Consulting</option>
+            <option value="analytics">Analytics & Monitoring</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="message">Tell Us About Your Needs</label>
+          <textarea id="message" name="message" rows="4" placeholder="Describe your current challenges and what you'd like to automate..."></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary btn-full">
+          <span>Request Free Audit</span>
+          <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </button>
+        <p class="form-note">No commitment required. We'll respond within 24 hours.</p>
+      </form>
+    </div>
+  </section>
+
+  <!-- ════════════════════════════════════════ FOOTER ══ -->
+  <footer class="footer">
+    <div class="footer-top">
+      <div class="container footer-grid">
+        <div class="footer-brand">
+          <a href="#home" class="nav-logo">
+            <div class="logo-icon">
+              <svg viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <polygon points="20,2 37,11 37,29 20,38 3,29 3,11" fill="url(#fhexGrad)" opacity="0.15"/>
+                <polygon points="20,2 37,11 37,29 20,38 3,29 3,11" fill="none" stroke="url(#fstrokeGrad)" stroke-width="1.5"/>
+                <text x="20" y="26" text-anchor="middle" fill="url(#ftextGrad)" font-size="18" font-weight="700" font-family="Rajdhani, sans-serif">G</text>
+                <defs>
+                  <linearGradient id="fhexGrad" x1="0%" y1="0%" x2="100%" y2="100%"><stop offset="0%" stop-color="#5ac8f5"/><stop offset="100%" stop-color="#1a9fd4"/></linearGradient>
+                  <linearGradient id="fstrokeGrad" x1="0%" y1="0%" x2="100%" y2="100%"><stop offset="0%" stop-color="#5ac8f5"/><stop offset="100%" stop-color="#1a9fd4"/></linearGradient>
+                  <linearGradient id="ftextGrad" x1="0%" y1="0%" x2="100%" y2="100%"><stop offset="0%" stop-color="#5ac8f5"/><stop offset="100%" stop-color="#ffffff"/></linearGradient>
+                </defs>
+              </svg>
+            </div>
+            <span class="logo-text">GLACIER <span>SYSTEMS</span></span>
+          </a>
+          <p>Intelligent automation solutions that transform how businesses operate, compete, and grow.</p>
+          <div class="social-links">
+            <a href="#" aria-label="LinkedIn" class="social-link">in</a>
+            <a href="#" aria-label="Twitter" class="social-link">𝕏</a>
+            <a href="#" aria-label="GitHub" class="social-link">gh</a>
+          </div>
+        </div>
+
+        <div class="footer-col">
+          <h4>Services</h4>
+          <ul>
+            <li><a href="#services">Business Process Automation</a></li>
+            <li><a href="#services">AI-Powered Automation</a></li>
+            <li><a href="#services">Robotic Process Automation</a></li>
+            <li><a href="#services">Systems Integration</a></li>
+            <li><a href="#services">Automation Consulting</a></li>
+            <li><a href="#services">Analytics & Monitoring</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Company</h4>
+          <ul>
+            <li><a href="#about">About Us</a></li>
+            <li><a href="#solutions">Industries</a></li>
+            <li><a href="#results">Case Studies</a></li>
+            <li><a href="#contact">Careers</a></li>
+            <li><a href="#contact">Blog</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Contact</h4>
+          <ul>
+            <li>hello@glaciersystems.io</li>
+            <li>+1 (800) 555-GLAC</li>
+            <li>San Francisco, CA 94105</li>
+          </ul>
+          <a href="#contact" class="btn btn-primary btn-sm" style="margin-top:1.25rem;display:inline-flex;">Get a Free Audit</a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div class="container footer-bottom-content">
+        <span>&copy; 2026 Glacier Systems. All rights reserved.</span>
+        <div class="footer-legal">
+          <a href="#">Privacy Policy</a>
+          <a href="#">Terms of Service</a>
+          <a href="#">Cookie Policy</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
